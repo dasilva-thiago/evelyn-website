@@ -464,6 +464,43 @@ nav .right a i {
   white-space: nowrap;
 }
 
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 20px 0;
+  color: var(--muted-color);
+  font-size: 13px;
+  border-top: 1px solid var(--border-color);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer .footer-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+footer p {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+footer .footer-links a:hover {
+  color: var(--link-color);
+}
+
 /* ---- RESPONSIVENESS ---- */
 @media (max-width: 1024px) {
   .hero-section {
@@ -541,6 +578,10 @@ nav .right a i {
 
   #cube-root {
     font-size: 155%;
+  }
+
+  footer {
+    padding-block: 10px;
   }
 }
 
