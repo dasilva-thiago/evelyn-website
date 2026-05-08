@@ -19,62 +19,84 @@
 <body>
 
     <nav>
-        <div class="left">
-            <a href="/">Evelyn Pereira dos Santos</a>
-        </div>
+  <div class="left">
+    <a href="/">Evelyn Pereira dos Santos</a>
+  </div>
+  <div class="right">
+    <div class="nav-actions">
+      <a href="https://www.linkedin.com/in/evelyn-p-895351251/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="mailto:evelynpereirasantos013@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+      <button class="dark-toggle" id="dark-toggle" aria-label="Alternar modo escuro">
+        <i class="fa-solid fa-moon" id="dark-icon"></i>
+      </button>
+    </div>
+  </div>
+</nav>
 
-        <div class="right">
-            <div class="nav-actions">
-                <a href="https://www.linkedin.com/in/evelyn-p-895351251/" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <span>Linkedin</span>
-                </a>
+<section class="hero-section">
 
-                <a href="mailto:evelynpereirasantos013@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>Email</span>
-                </a>
+  <!-- LEFT: presentation text -->
+  <div class="hero-text">
+    <div class="hero-eyebrow">
+      <i class="fa-solid fa-graduation-cap"></i>
+      Pedagoga & Educadora
+    </div>
+    <h1>Evelyn Pereira</h1>
+    <p class="hero-subtitle">Profissional da Educação - Pedagoga, Educadora, Professora</p>
+    <ul class="hero-bullets">
+      <li>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Pedagoga com formação em Educação Infantil</span>
+      </li>
+      <li>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Educadora com experiência em ensino fundamental e infantil</span>
+      </li>
+      <li>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Desenvolvimento e alunos atípicos (TDAH, autismo e TOD)</span>
+      </li>
+      <li>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Ativamente desenvolvendo estratégias pedagógicas para alunos com necessidades especiais</span>
+      </li>
+    </ul>
+    <div class="hero-links">
+      <button class="hero-cv-btn" id="cv-btn" aria-label="Ver Currículo">
+        <i class="fa-solid fa-file-lines"></i>
+        Ver Currículo
+      </button>
+    </div>
+  </div>
 
-                <button class="dark-toggle" id="dark-toggle" aria-label="Toggle dark mode">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
+  <!-- RIGHT: Rubik's Cube + decoration -->
+  <div class="hero-visual" id="hero-visual" aria-label="Cubo Mágico interativo, símbolo de aprendizado e resolução de problemas">
+    <!-- Decorative elements -->
+    <div class="cube-ring"></div>
+    <div class="cube-dot"></div>
+    <div class="cube-dot"></div>
+    <div class="cube-dot"></div>
+    <div class="cube-dot"></div>
+    <div class="cube-dot"></div>
 
-    <!-- hero section -->
-    <section class="hero-section section" data-aos="fade-up">
-        <div class="text">
-            <h1 data-i18n="hero.title">Evelyn Pereira</h1>
-            <p class="hero-subtitle" data-i18n="hero.subtitle">Pedagoga, Educadora, Professora e Profissional da Educação</p>
-            <ul class="hero-bullets">
-                <li>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <span data-i18n="hero.bullets.0">Pedagoga com formação em Educação Infantil</span>
-                </li>
-                <li>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <span data-i18n="hero.bullets.1">Educadora com experiência em ensino fundamental e infantil</span>
-                </li>
-                <li>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <span data-i18n="hero.bullets.2">Desenvolvimento e alunos atípicos (TDAH, autismo e TOD)</span>
-                </li>
-                <li>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <span data-i18n="hero.bullets.3">Ativamente desenvolvendo estratégias pedagógicas para alunos com necessidades especiais</span>
-                </li>
-            </ul>
+    <!-- The cube -->
+    <div id="cube-scene">
+      <div id="cube-pivot">
+        <div id="cube-root"></div>
+      </div>
+    </div>
+    <span class="cube-hint">Arraste para girar</span>
+  </div>
 
-            <div class="links" data-aos="fade-up" data-aos-delay="100">
-                <button id="cv-btn" class="hero-cv-btn" aria-label="View CV">
-                    <i class="fa-solid fa-file-lines"></i>
-                    <span data-i18n="nav.cv">Ver Currículo</span>
-                </button>
-            </div>
-        </div>
+</section>
 
-    </section>
+<script src="js/cube.js"></script>
 
 </body>
 
